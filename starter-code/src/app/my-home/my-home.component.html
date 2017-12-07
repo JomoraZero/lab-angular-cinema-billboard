@@ -1,0 +1,11 @@
+<h2>Movie List</h2>
+
+
+<ul>
+  <li *ngFor="let oneMovie of cinemaThang.movies">
+    <h3>Room {{oneMovie.room}}</h3>
+    <img [src]="oneMovie.poster" />
+    <h5>{{oneMovie.title}}</h5>
+    <a routerLink="/movies/{{oneMovie.id}}">Details</a>
+  </li>
+</ul>
